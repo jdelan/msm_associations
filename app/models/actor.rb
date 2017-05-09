@@ -10,3 +10,4 @@ validates :name, :presence => true, :uniqueness => {:scope => :dob}
   #  - image_url: no rules
 
 end
+ 
