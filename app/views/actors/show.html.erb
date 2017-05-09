@@ -19,6 +19,14 @@
 
     </dl>
 
+    <ul>
+      <% @actor.characters.each do |character| %>
+      <li>
+        <a href="/characters/<%= character.id %>"><%= character.movie.title %></a>
+      </li>
+      <% end %>
+    </ul>
+
     <div class="btn-group btn-group-justified">
       <a href="/actors" class="btn btn-primary">
         Back
