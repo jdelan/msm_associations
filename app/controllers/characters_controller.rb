@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
 
   def show
     @character = Character.find(params[:id])
-
     render("characters/show.html.erb")
   end
 
@@ -35,7 +34,6 @@ class CharactersController < ApplicationController
 
   def edit
     @character = Character.find(params[:id])
-
     render("characters/edit.html.erb")
   end
 
