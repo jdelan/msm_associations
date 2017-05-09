@@ -34,7 +34,8 @@
           Actor
         </label>
 
-        <input type="text" id="actor_id" name="character_id" value="<%= @character.id %>">
+        <%= select_tag(:actor_id, options_from_collection_for_select(Actor.all, :id, :name), :class => "form-control") %>
+
       </div>
       <a href="/actors/new">or add a new actor</a>
 
